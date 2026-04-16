@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: #000;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: gold;
+}
+
+.hero {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #222, #444);
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+.services {
+    padding: 40px 20px;
+}
+
+.service-box {
+    background: #222;
+    margin: 10px auto;
+    padding: 15px;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.contact {
+    padding: 40px 20px;
+    background: #1a1a1a;
+}
+
+footer {
+    background: black;
+    padding: 15px;
+    font-size: 14px;
+}
