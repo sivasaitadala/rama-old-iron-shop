@@ -1,35 +1,81 @@
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: white;
-    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0d0d0d;
+    color: white;
+    line-height: 1.6;
+}
+
+/* HEADER */
 header {
-    background: #000;
-    padding: 20px;
+    background: rgba(0,0,0,0.85);
+    padding: 25px;
+    text-align: center;
+    border-bottom: 2px solid gold;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
 }
 
 header h1 {
-    margin: 0;
     color: gold;
+    font-size: 2.2rem;
 }
 
+header p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* HERO */
 .hero {
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #222, #444);
+    min-height: 85vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
+        url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
 }
 
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #ddd;
+}
+
+/* BUTTONS */
 .btn {
     display: inline-block;
     margin: 10px;
-    padding: 12px 25px;
+    padding: 14px 30px;
     background: gold;
     color: black;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255,215,0,0.4);
 }
 
 .whatsapp {
@@ -37,25 +83,69 @@ header h1 {
     color: white;
 }
 
+/* SERVICES */
 .services {
-    padding: 40px 20px;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 35px;
+    font-size: 2.2rem;
+    color: gold;
 }
 
 .service-box {
-    background: #222;
-    margin: 10px auto;
-    padding: 15px;
-    max-width: 400px;
-    border-radius: 8px;
+    background: rgba(255,255,255,0.05);
+    margin: 15px auto;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: 0.3s;
+    backdrop-filter: blur(6px);
 }
 
+.service-box:hover {
+    transform: scale(1.03);
+    background: rgba(255,215,0,0.08);
+}
+
+/* CONTACT */
 .contact {
-    padding: 40px 20px;
-    background: #1a1a1a;
+    padding: 70px 20px;
+    background: #111;
+    text-align: center;
 }
 
+.contact h2 {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+/* FOOTER */
 footer {
     background: black;
-    padding: 15px;
+    padding: 20px;
+    text-align: center;
     font-size: 14px;
+    color: #aaa;
+}
+
+/* FLOATING WHATSAPP */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
